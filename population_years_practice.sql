@@ -1,4 +1,3 @@
-https://gist.github.com/45e7ff3d77473f301c7d38d9b2c516ed
 
 -- This is the first query:
 
