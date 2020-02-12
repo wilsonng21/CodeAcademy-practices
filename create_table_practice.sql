@@ -29,3 +29,4 @@ WHERE id = 0;
 
 SELECT *
 FROM friends;
+
