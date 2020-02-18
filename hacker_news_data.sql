@@ -41,3 +41,4 @@ FROM hacker_news
 WHERE timestamp IS NOT NULL
 GROUP BY 1
 ORDER BY 1;
+
