@@ -38,7 +38,7 @@ VALUES ('jane_smith', 5, 'amazing, great job!', 1),
 SELECT *
 FROM video_reviews;
 
-# Query selects all columns from videos and left join video_reviews where both table's VideoID matches up.
+# Query selects all columns from videos and inner join video_reviews where both table's VideoID matches up.
 SELECT *
 FROM videos
 JOIN video_reviews
