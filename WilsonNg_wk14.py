@@ -1,16 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[69]:
-
-
 # Task 01 https://github.com/is210-spring-2017/is210-week-14-warmup
 
 import pet
-
-
-# In[81]:
-
 
 class Dog(pet.Pet):
         
@@ -21,52 +13,11 @@ class Dog(pet.Pet):
         for key, value in kwargs.items():
            setattr(self, key, value)
 
+buddy = Dog(has_shots=True, color = 'black', age = 3, name = 'Buddy'
 
-# In[326]:
-
-
-buddy = Dog(has_shots=True, color = 'black', age = 3, name = 'Buddy')
-
-
-# In[327]:
-
-
-buddy.color
-
-
-# In[328]:
-
-
-buddy.has_shots
-
-
-# In[329]:
-
-
-buddy.age
-
-
-# In[330]:
-
-
-buddy.name
-
-
-# In[ ]:
-
-
-
-
-
-# In[249]:
-
-
+            
 # Task 02
 from data import FRUIT
-
-
-# In[318]:
-
 
 def get_cost_per_item(shoplist):
     new_dict = {item: shoplist[item] * FRUIT[item] 
@@ -81,29 +32,16 @@ def get_cost_per_item(shoplist):
 # (These are the respective values of each dictionary).
 # Return a new dictionary keyed by the name of the fruit with the total cost per-item reflected.
 
-
-# In[319]:
-
-
 shopdict = {
     'Black Plum':6,
     'Red Plum': 5,
     'Grenade Pluot': 3}
 
-
-# In[320]:
-
-
 get_cost_per_item(shopdict)
-
-
-# In[324]:
-
 
 def get_total_cost(shoplist):
     new_dict = sum(get_cost_per_item(shopdict).values())
     return new_dict
-
 
 # In a single-line:
 # Uses get_cost_per_item() to retrieve the per-item costs.
@@ -112,15 +50,5 @@ def get_total_cost(shoplist):
 # Check out the sum() function to help with this. There's also a helpful dictionary built-in function you might want to use.
 # Returns the total cost.
 
-
-# In[325]:
-
-
 get_total_cost(shopdict)
-
-
-# In[ ]:
-
-
-
 
