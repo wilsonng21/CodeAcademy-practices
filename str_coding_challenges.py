@@ -64,5 +64,33 @@ print(check_for_name("My name is jamie", "Jamie"))
 print(check_for_name("My name is Samantha", "Jamie"))
 # should print False
 
+# Write your every_other_letter function here:   CODEACADEMY solution
+def every_other_letter(word):
+  every_other = ""
+  for i in range(0, len(word), 2):
+    every_other += word[i]
+  return every_other
+
+# Uncomment these function calls to test your tip function:
+print(every_other_letter("Codecademy"))
+# should print Cdcdm
+print(every_other_letter("Hello world!"))
+# should print Hlowrd
+print(every_other_letter(""))
+# should print 
+
+# Write your every_other_letter function here:  MY SOLUTION
+def every_other_letter(word):
+  new_str = ""
+  for i in range(len(word)):
+    new_str = word[0:i:2]
+  return new_str
+# Uncomment these function calls to test your function:
+print(every_other_letter("Codecademy"))
+# should print Cdcdm
+print(every_other_letter("Hello world!"))
+# should print Hlowrd
+print(every_other_letter(""))
+# should print 
 
 
